@@ -3,7 +3,7 @@ unit='metric';
 getWeatherInfo("Dhaka");
 function getWeatherInfo(cityName)
 {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiId}&units=${unit}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiId}&units=${unit}`)
 .then(res => 
     res.json())
 .then(data=>{
